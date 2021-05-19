@@ -78,7 +78,7 @@
                             <label for="descripcion" class="col-md-4 col-form-label text-md-right">{{ __('Descripción') }}</label>
 
                             <div class="col-md-6">
-                                <textarea name="descripcion" id="descripcion" class="form-control @error('descripcion') is-invalid @enderror" rows="5">{{ old('descripcion') ?? $usuario->descripcion }}</textarea>
+                                <textarea name="descripcion" id="descripcion" class="form-control @error('descripcion') is-invalid @enderror" rows="5" placeholder="{{ old('descripcion') ?? $usuario->descripcion }}"></textarea>
 
                                 @error('descripcion')
                                     <span class="invalid-feedback" role="alert">

@@ -25,7 +25,7 @@ Route::get('/', function () {
 
 Route::get('notify/{id}', function ($id) {
     User::find($id)->notify(new MailNotification);
-    return back()->withInput();
+    return back()->with('success', 'La notificación se ha enviado correctamente!');
 });
 
 Route::get('/register', [RegisterController::class, 'index'])->name('user.index');

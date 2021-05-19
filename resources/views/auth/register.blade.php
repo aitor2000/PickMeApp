@@ -79,7 +79,7 @@
                             <label for="descripcion" class="col-md-4 col-form-label text-md-right">{{ __('Descripción (Sólo si no eres conductor)') }}</label>
 
                             <div class="col-md-6">
-                                <textarea name="descripcion" id="descripcion" class="form-control @error('descripcion') is-invalid @enderror" rows="5">Introduce una descripción de porque estás buscando alguien que te lleve al instituto.</textarea>
+                                <textarea name="descripcion" id="descripcion" class="form-control @error('descripcion') is-invalid @enderror" rows="5" placeholder="Introduce una descripción de porque estás buscando alguien que te lleve al instituto."></textarea>
 
                                 @error('descripcion')
                                     <span class="invalid-feedback" role="alert">
